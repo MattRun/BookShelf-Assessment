@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookShelf</title>
+        <link rel="stylesheet" href="index.html" />
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="about.html" />
+        <link rel="stylesheet" href="contact.html" />
+
+      </head>
+        
+            <header>
+                  <span class="navbar">BookShelf</span>
+                    <nav class="links">
+                        <a class="active" href="index.html">Books</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    
+                    </nav>
+            </header>
+    <body>
+        <div class="search">
+            
+            <button type="search" class="search" onclick="onsSearch()">Search</button>
+            <input type="text" class="searchabook" placeholder="Search any book...if we dont have it, add it">
+            
+
+        </div>
+        <!-- <div class="image">
+            <img src="/images/library.jpeg" alt="">
+        </div> -->
+        <button type="submit" id="sortAsc" onclick="sortAsc()"></button>
+
+        <!-- <div class="container"> -->
+            
+            <!-- <button type="submit" class="addbook" onclick="addBook()">Add Book</button>
+            <input type="text" class = "title" placeholder="Title">
+            <input type="text" class = "subject" placeholder="Subject">
+            <input type="text" class = "language" placeholder="Language">
+            <input type="text" class = "author" placeholder="Author"> -->
+            
+
+            <div>
+                <div id="userInputArea">
+                    <label>Title:</label> 
+                    <input id="streetAddress" />
+                    <label>Author:</label> 
+                    <input id="propertyType" />
+                    <label>Language:</label> 
+                    <input id="city" />
+                    <label>Subjects:</label> 
+                   <input id="state" />
+                   <button id = "userInputButton">Add Book</button>
+                 </div>
+               <div>
+                   <h1 id = "addedBooks">Your Added Books</h1>
+                       
+               </div>
+
+            <!-- <div id ="comments"></div> -->
+            
+            <!-- <form onsubmit="addComment(); return false;">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="comment" placeholder="Comment">
+                <input type="submit" value="Submit">
+            </form> -->
+            <!-- <div>
+                <div id = "addCommentButton">
+                    <label>User:</label> 
+                    <input id = "name"/>
+                    <label>Comment:</label> 
+                    <input id = "comment"/>
+                </div>
+            </div> -->
+        <!-- </div> -->
+        <script src="/js/book-data.js"></script>
+        <script src="/js/bookorder.js"></script>
+        <script src="/js/library.js"></script>
+        <script src="index.js"></script>
+    </body>
+
+    
+</html>
